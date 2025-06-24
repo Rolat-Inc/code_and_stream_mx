@@ -1,0 +1,20 @@
+sub applyFocusTo(node as object, id as string, parentNode = {} as object)
+    removeFocusTo(parentNode, id)
+
+    if (assocArrayNotEmpty(node) or isSGNode(node)) AND stringNotEmpty(id) then node.setFocus(true)
+    print "****** Applied focus to : "; id; " ******"
+
+    saveNewEntryToFocusRegistry(id)
+end sub
+
+sub removeFocusTo(node as object, id as string)
+    if (assocArrayNotEmpty(node) or isSGNode(node)) AND stringNotEmpty(id) then node.setFocus(false)
+    print "****** Removed focus to : "; id; " ******"
+end sub
+
+sub saveNewEntryToFocusRegistry(id as string)
+    focusHistoricalRecord = m.global.focusRegistry
+    focusHistoricalRecord.push(id)
+
+    m.global.focusRegistry = focusHistoricalRecord
+end sub
