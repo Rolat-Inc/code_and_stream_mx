@@ -1,0 +1,17 @@
+sub init()
+    initVariables()
+    initSettings()
+end sub
+
+sub initVariables()
+    m.sideBarBackground = m.top.findNode("sideBarBackground")
+    m.tabLogosLayout = m.top.findNode("tabLogosLayout")
+    m.sideBarList = m.top.findNode("sideBarList")
+end sub
+
+sub initSettings()
+    logosWidth = 20
+
+    m.sideBarList.content = CreateObject("roSGNode", "logosContentComponent")
+    m.sideBarList.translation = [(60) ,329]
+end sub

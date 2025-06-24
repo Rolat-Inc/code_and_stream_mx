@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<component name="SideBar" extends="BaseView">
+
+    <interface>
+    </interface>
+
+    <script type="text/brightscript" uri="SideBar.bs"/>
+
+    <children>
+        <Rectangle
+            id="sideBarBackground"
+            width="138"
+            height="1080"
+            color="0x02080D"
+            translation="[0,0]">
+
+            <MarkupList
+                id = "sideBarList"
+                itemComponentName = "sideBarItemComponent"
+                itemSize = "[ 80, 22 ]"
+                itemSpacing = "[0, 100]"
+                drawFocusFeedback = "false"
+                vertFocusAnimationStyle = "floatingFocus" />
+        </Rectangle>
+    </children>
+</component>
