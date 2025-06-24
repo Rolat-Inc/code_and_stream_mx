@@ -1,5 +1,5 @@
 ```bash
-# Clona el repositorio
-git clone https://github.com/FarithRomero/NBAChannel.git
+# Bienvenid@
 
-# Navega al directorio del proyecto
+# Clona el repositorio
+git clone https://github.com/Rolat-Inc/code_and_stream_mx.git
