@@ -18,7 +18,7 @@
             <MarkupList
                 id = "sideBarList"
                 itemComponentName = "sideBarItemComponent"
-                itemSize = "[ 80, 22 ]"
+                itemSize = "[ 105, 22 ]"
                 itemSpacing = "[0, 100]"
                 drawFocusFeedback = "false"
                 vertFocusAnimationStyle = "floatingFocus" />

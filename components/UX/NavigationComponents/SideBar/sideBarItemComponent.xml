@@ -16,7 +16,7 @@
         itemSpacings="[8]">
         <Poster
             id="homeLogoPoster"
-            width="23"/>
+            width="0.0"/>
         <Label
             id="itemLabel"
             color="#e5be01"
