@@ -30,15 +30,16 @@ end function
 sub createUsersContentNodeApi(responseApi as object)
 
   usersProfilesContentFather = CreateObject("RoSGNode","ContentNode")
-  usersInfoChild = usersProfilesContentFather.createChild("ContentNode")
 
-  for i = 0 to 30
+  for i = 0 to 10
     userContent = responseApi.response[i]
-    userProfilesContentGrandChild = usersInfoChild.createChild("ContentNode")
-    userProfilesContentGrandChild.title = userContent.nickname
+    userProfilesContentGrandChild = usersProfilesContentFather.createChild("ContentNode")
+    userProfilesContentGrandChild.id = userContent.id
+    userProfilesContentGrandChild.SHORTDESCRIPTIONLINE1 = userContent.nickname
     userProfilesContentGrandChild.HDPOSTERURL = userContent.logo
     userProfilesContentGrandChild.Directors = [userContent.name, userContent.city, userContent.code,userContent.nickname]
     userProfilesContentGrandChild.url = m.videos[i]
+    userProfilesContentGrandChild.streamFormat = "mp4"
   end for
 
   m.top.output = usersProfilesContentFather

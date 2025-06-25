@@ -22,7 +22,7 @@ sub onFocusedChildChange(event as object)
 end sub
 
 sub initStyles()
-    m.homeHeaderText.text = "TOP 100 PLAYS OF 2023-24 SEASON"
+    m.homeHeaderText.text = "TOP 10 TEAMS OF 2023-24 SEASON"
     m.eventDescriptionText.text = "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat"
 
     stopLoad()

@@ -18,36 +18,37 @@
             width="1783"
             translation="[133,863]"
             uri="pkg:/images/gradient.png"/>
-        <Label
-            id="homeHeaderText"
-            translation="[200, 650]"
-            width="981"
-            height="57"
-            wrap="true"
-            maxLines="2"
-            font="font:ExtraLargeBoldSystemFont"
-            color="#FFFFFF" >
-        </Label>
-        <Label
-            id="eventDescriptionText"
-            translation="[200, 950]"
-            width="1038"
-            height="117"
-            wrap="true"
-            maxLines="2"
-            font="font:BadgeSystemFont"
-            lineSpacing="0"
-            color="#FFFFFF" >
-        </Label>
-        <CustomizedRowlist
-            id="teamsList"
-            itemComponentName = "usersItemComponent"
-            itemSize="[1490, 130]"
-            numRows="1"
-            rowItemSize="[[230,130]]"
-            rowItemSpacing="[[180]]"
-            translation="[200,940]"
-            focusBitmapUri= "pkg:/images/focus_grid.9.png"
-            visible="true"/>
+        <LayoutGroup
+            id="homeLayout"
+            layoutDirection="vert"
+            itemSpacings="[15]"
+            translation="[200, 600]">
+            <Label
+                id="homeHeaderText"
+                width="981"
+                height="57"
+                wrap="true"
+                maxLines="2"
+                font="font:ExtraLargeBoldSystemFont"
+                color="#FFFFFF" >
+            </Label>
+            <PosterGrid
+                id="teamsList"
+                basePosterSize="[200,200]"
+                itemSpacing="[32,32]"
+                caption1NumLines="1"
+                numColumns="7"
+                numRows="1"/>
+            <Label
+                id="eventDescriptionText"
+                width="1200"
+                height="117"
+                wrap="true"
+                maxLines="2"
+                font="font:BadgeSystemFont"
+                lineSpacing="0"
+                color="#FFFFFF" >
+            </Label>
+        </LayoutGroup>
     </children>
 </component>
