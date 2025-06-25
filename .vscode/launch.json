@@ -1,0 +1,13 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "Launch Code & Stream",
+            "type": "brightscript",
+            "request": "launch",
+            "host": "${promptForHost}",
+            "password": "pluto",
+            "rootDir": "${workspaceFolder}"
+        }
+    ]
+}
