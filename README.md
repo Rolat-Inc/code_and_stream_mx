@@ -1,47 +1,46 @@
-# Code & Stream with Roku! 🇲🇽
+# ¡Code & Stream con Roku! 🇲🇽
 
-Welcome!  
-This repository is part of the **Code & Stream with Roku!** event held in Mexico City and hosted by Roku, Rolat and Globant.
+Este repositorio hace parte del evento **Code & Stream with Roku!** realizado en Ciudad de México y organizado por Roku, Rolat y Globant.
 
-If you attended the session, here you'll find a hands-on exercise to apply the fundamentals of Roku development shared during the talk. Whether you're new to Roku or just curious, this is a great place to start!
-
----
-
-## 🧩 Exercise: Play selected content
-In this exercise, you'll complete the Roku app by adding functionality to **play the video associated with the selected item in the PosterGrid**.
-
-### 🎯 Objective  
-When a user selects an item, the app open should open the video view, use the data from the corresponding `ContentNode` and play it using a video player.
-
-### 🔍 What you'll work with  
-- A basic `SceneGraph` project with a `PosterGrid` displaying a list of items.  
-- Each item in the grid is backed by a `ContentNode` that includes metadata such as `title`, `hdposterurl`, and `url`.
-
-### 🛠️ Task  
-1. Detect when an item is selected.    
-2. Use a `Video` node to play the video. Access the `url` and other required data of the selected `ContentNode`.
-
-> 💡 Tip: You can observe  a field from the `PosterGrid` to catch the event that you require. 
-
-### ✅ Completion Criteria  
-- When selecting an item from the `PosterGrid`, the associated video starts playing.  
-- The app doesn't crash and handles empty or invalid URLs gracefully.
-- The video gets the focus and controls work properly. 
-- (Optional) When pressing back, user is taken to the main view.
+Si asististe a la charla, aquí encontrarás un ejercicio práctico para aplicar los fundamentos de desarrollo en Roku compartidos durante la sesión.
 
 ---
 
-## 📚 Useful Resources
+## 🧩 Ejercicio: Reproducir contenido seleccionado
 
-Whether you're just getting started with Roku or need a quick refresher, these resources can help you complete the exercise:
+En este ejercicio completarás la app de Roku agregando la funcionalidad para **reproducir el video asociado al ítem seleccionado en el PosterGrid**.
 
-### 🧠 Roku Developer Docs  
-- [SceneGraph Overview](https://developer.roku.com/docs/developer-program/getting-started/architecture.md)  
-- [Working with ContentNode](https://developer.roku.com/docs/references/brightscript/components/contentnode.md)  
-- [PosterGrid Documentation](https://developer.roku.com/docs/references/scenegraph/list-and-grid-nodes/postergrid.md)  
-- [Video Node Reference](https://developer.roku.com/docs/references/scenegraph/media-playback-nodes/video.md)  
+### 🎯 Objetivo  
+Cuando el usuario seleccione un ítem, la app debe abrir la vista de video, usar la información del `ContentNode` correspondiente y reproducirlo usando un reproductor de video.
 
+### 🔍 ¿Con qué trabajarás?  
+- Un proyecto básico de `SceneGraph` con un `PosterGrid` que muestra una lista de elementos.  
+- Cada ítem en el grid está relacionado con un `ContentNode` que incluye metadatos como `title`, `hdposterurl` y `url`.
+
+### 🛠️ Tarea  
+1. Detectar cuándo se selecciona un ítem.  
+2. Usar un nodo `Video` para reproducir el contenido. Accede a los datos necesarios del `ContentNode` seleccionado.
+
+> 💡 Tip: Puedes observar un campo del `PosterGrid` para capturar el evento que necesitas.
+
+### ✅ Criterios de finalización  
+- Al seleccionar un ítem del `PosterGrid`, el video asociado comienza a reproducirse.  
+- La app no debe fallar y debe manejar correctamente URLs vacías o inválidas.  
+- El video debe tener el foco y los controles deben funcionar correctamente.  
+- (Opcional) Al presionar "back", el usuario debe volver a la vista principal.
 
 ---
 
-Let’s code and stream — happy hacking!
+## 📚 Recursos útiles
+
+Recursos que pueden ayudarte a completar el ejercicio:
+
+### 🧠 Documentación oficial de Roku  
+- [Introducción a SceneGraph](https://developer.roku.com/docs/developer-program/getting-started/architecture.md)  
+- [Uso de ContentNode](https://developer.roku.com/docs/references/brightscript/components/contentnode.md)  
+- [Documentación de PosterGrid](https://developer.roku.com/docs/references/scenegraph/list-and-grid-nodes/postergrid.md)  
+- [Referencia del nodo Video](https://developer.roku.com/docs/references/scenegraph/media-playback-nodes/video.md)
+
+---
+
+¡A programar y hacer streaming — feliz desarrollo!
