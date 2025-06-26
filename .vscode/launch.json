@@ -6,7 +6,7 @@
             "type": "brightscript",
             "request": "launch",
             "host": "${promptForHost}",
-            "password": "pluto",
+            "password": "${promptForPassword}",
             "rootDir": "${workspaceFolder}"
         }
     ]

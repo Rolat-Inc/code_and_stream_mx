@@ -8,6 +8,7 @@ end sub
 sub initVariables()
     m.homeHeaderText = m.top.findNode("homeHeaderText")
     m.eventDescriptionText = m.top.findNode("eventDescriptionText")
+    m.teamsList = m.top.findNode("teamsList")
 end sub
 
 sub initObservers()
@@ -36,7 +37,6 @@ sub createUserContentTask()
 end sub
 
 sub onOutputChanged()
-    m.teamsList = m.top.findNode("teamsList")
 	m.teamsList.content = m.userContentTask.output
 
     applyFocusTo(m.teamsList, m.teamsList.id)
