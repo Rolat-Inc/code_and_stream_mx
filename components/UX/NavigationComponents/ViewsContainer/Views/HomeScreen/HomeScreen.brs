@@ -1,7 +1,6 @@
 sub init()
     initVariables()
     initStyles()
-    initObservers()
     createUserContentTask()
 end sub
 
@@ -11,27 +10,13 @@ sub initVariables()
     m.teamsList = m.top.findNode("teamsList")
 end sub
 
-sub initObservers()
-    m.top.observeField("focusedChild", "onFocusedChildChange")
-end sub
-
-sub stopLoad()
-    m.top.loadCompleted = true
-end sub
-
-sub onFocusedChildChange(event as object)
-end sub
-
 sub initStyles()
     m.homeHeaderText.text = "TOP 10 TEAMS OF 2023-24 SEASON"
     m.eventDescriptionText.text = "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat"
-
-    stopLoad()
 end sub
 
 sub createUserContentTask()
     m.userContentTask = CreateObject("roSGNode", "usersContentTask")
-    m.userContentTask.url = "https://api-nba-v1.p.rapidapi.com/teams"
     m.userContentTask.observeField("output", "onOutputChanged")
     m.userContentTask.control = "RUN"
 end sub
@@ -39,7 +24,7 @@ end sub
 sub onOutputChanged()
 	m.teamsList.content = m.userContentTask.output
 
-    applyFocusTo(m.teamsList, m.teamsList.id)
+    m.teamsList.setFocus(true)
     m.userContentTask.unObserveField("output")
     m.userContentTask.control = "stop"
     m.userContentTask = invalid
@@ -50,11 +35,11 @@ function onKeyEvent(key as String, press as Boolean) as Boolean
 
 	if press
 		if key = "OK"
-            handle = true
+            handled = true
         else if key = "down"
-            handle = true
+            handled = true
         else if key = "up"
-            handle = true
+            handled = true
 		end if
 		handled = true
 	end if

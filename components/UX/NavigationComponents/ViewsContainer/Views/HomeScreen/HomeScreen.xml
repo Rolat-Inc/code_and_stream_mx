@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="utf-8" ?>
 
-<component name="HomeScreen" extends="BaseView">
+<component name="HomeScreen" extends="Group">
     <interface>
     </interface>
 
-    <script type="text/brightscript" uri="HomeScreen.bs"/>
+    <script type="text/brightscript" uri="HomeScreen.brs"/>
 
     <children>
         <Poster

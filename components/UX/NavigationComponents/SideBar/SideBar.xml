@@ -1,11 +1,7 @@
 <?xml version="1.0" encoding="utf-8" ?>
 
-<component name="SideBar" extends="BaseView">
-
-    <interface>
-    </interface>
-
-    <script type="text/brightscript" uri="SideBar.bs"/>
+<component name="SideBar" extends="Group">
+    <script type="text/brightscript" uri="SideBar.brs"/>
 
     <children>
         <Rectangle

@@ -3,7 +3,7 @@ sub Main()
     screen = CreateObject("roSGScreen")
     m.port = CreateObject("roMessagePort")
     screen.setMessagePort(m.port)
-    scene = screen.CreateScene("mainScreen")
+    scene = screen.CreateScene("MainScene")
     scene.backgroundColor= "0x000000"
     scene.backgroundUri = ""
     screen.show()

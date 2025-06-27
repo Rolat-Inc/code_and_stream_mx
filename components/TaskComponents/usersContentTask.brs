@@ -21,7 +21,7 @@ function importUsersData()
   request.AddHeader("X-RapidAPI-Key", "36bc968a0fmsh43df5fc25d35121p18b039jsn5fc1cb60412d")
   request.AddHeader("X-RapidAPI-Host", "api-nba-v1.p.rapidapi.com")
   request.InitClientCertificates()
-  request.SetUrl(m.top.url)
+  request.SetUrl("https://api-nba-v1.p.rapidapi.com/teams")
   responseApi = ParseJson(request.GetToString())
 
   createUsersContentNodeApi(responseApi)

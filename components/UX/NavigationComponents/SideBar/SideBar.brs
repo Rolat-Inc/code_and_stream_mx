@@ -10,8 +10,6 @@ sub initVariables()
 end sub
 
 sub initSettings()
-    logosWidth = 20
-
     m.sideBarList.content = CreateObject("roSGNode", "logosContentComponent")
     m.sideBarList.translation = [48 ,329]
 end sub
